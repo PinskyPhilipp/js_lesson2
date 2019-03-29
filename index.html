@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('Задача №3');
+
+        var a = parseInt(prompt('Введите первое число:'));
+        var b = parseInt(prompt('Введите второе число:'));
+
+        if (a >= 0 && b >= 0) {
+            console.log('Разность чисел:  ' + (a - b));
+        } else if (a < 0 && b < 0) {
+            console.log('Произведение чисел:  ' + (a * b));
+        } else {
+            console.log('Сумма  чисел:  ' + (a + b));
+        }
+
+        console.log('Задача №4');
+
+        var a = +prompt('Ведите число от 1 до 15:')
+        switch (a) {
+            case 1:
+                console.log(++a);
+            case 2:
+                console.log(++a);
+            case 3:
+                console.log(++a);
+            case 4:
+                console.log(++a);
+            case 5:
+                console.log(++a);
+            case 6:
+                console.log(++a);
+            case 7:
+                console.log(++a);
+            case 8:
+                console.log(++a);
+            case 9:
+                console.log(++a);
+            case 10:
+                console.log(++a);
+            case 11:
+                console.log(++a);
+            case 12:
+                console.log(++a);
+            case 13:
+                console.log(++a);
+            case 14:
+                console.log(++a);
+                break;
+            default:
+                console.log('Нужно ввести от 1 до 15!');
+        }
+
+
+        console.log('Задача №5');
+
+        function addition(a, b) {
+            return a + b;
+        }
+
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+        function division(a, b) {
+            return a / b;
+        }
+
+
+        console.log('Задача №6');
+
+        function mathOperation(a, b, operation) {
+            switch (operation) {
+                case "1":
+                    return addition(a, b);
+                    break;
+                case "2":
+                    return subtraction(a, b);
+                    break;
+                case "3":
+                    return multiplication(a, b);
+                    break;
+                case "4":
+                    return division(a, b);
+                    break;
+            }
+        }
+        var a = +prompt('Введите число 1:');
+        var b = +prompt('Введите число 2:');
+        operation = prompt('Веберите операцию: 1 - сложение. 2 - вычитание. 3 - умножение. 4 - деление.');
+
+
+        console.log(mathOperation(a, b, operation));
+
+    </script>
+
+
+</body>
+
+</html>
